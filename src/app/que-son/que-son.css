@@ -1,0 +1,151 @@
+.cards-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card:last-child:nth-child(odd) {
+    max-width: calc(50% - 12px);
+    flex: 0 1 calc(50% - 12px);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 32px;
+    max-width: 680px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+    scrollbar-width: none;       
+    -ms-overflow-style: none; 
+}
+
+.modal::-webkit-scrollbar {
+    display: none;                /* Chrome, Safari */
+}
+
+.modal h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.modal p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.modal-close {
+    position: relative;
+    margin: 24px 0 0 auto;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0a1a3a, #3a0ca3);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    white-space: nowrap;
+}
+
+.modal-close span:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+.modal-close img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.modal-close .texto {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease 0.1s;
+}
+
+.modal-close:hover {
+    width: 140px;
+}
+
+.modal-close:hover span:first-child {
+    left: 24px;
+    transform: translateY(-50%);  
+}
+
+.modal-close:hover .texto {
+    opacity: 1;
+}

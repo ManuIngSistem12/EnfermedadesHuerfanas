@@ -1,0 +1,414 @@
+<div class="container">
+    <div class="cards-grid">
+        <div class="card" (click)="abrirModal('queSon')">
+            <h2>¿Qué son las enfermedades huérfanas?</h2>
+        </div>
+        <div class="card" (click)="abrirModal('caracteristicas')">
+            <h2>Características de las enfermedades huérfanas</h2>
+        </div>
+        <div class="card" (click)="abrirModal('causas')">
+            <h2>Causas más Comunes</h2>
+        </div>
+        <div class="card" (click)="abrirModal('importancia')">
+            <h2>Importancia del Diagnóstico Temprano</h2>
+        </div>
+        <div class="card" (click)="abrirModal('impacto')">
+            <h2>Impacto social y en la calidad de vida de los pacientes.</h2>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" [class.active]="modalVisible" (click)="onOverlayClick($event)">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <button class="modal-close" (click)="cerrarModal()">
+            <span><img src="imgQueSon/flecha.png" alt="flecha"></span>
+            <span class="texto">Salir</span>
+        </button>
+        <section class="queSon" *ngIf="modalActivo === 'queSon'">
+            <h2>¿Qué son las enfermedades huérfanas?</h2>
+            <p>Las enfermedades huérfanas o raras se definen formalmente como un conjunto de patologías que presentan
+                una baja prevalencia en la población, es decir, afectan a un número reducido de personas en comparación
+                con otras enfermedades más comunes.</p>
+            <p>De manera más específica, su definición puede variar según el país o la organización, pero generalmente
+                se considera que una enfermedad es rara cuando:</p>
+            <ul>
+                <li>
+                    Afecta a un número muy pequeño de personas dentro de una población determinada
+                </li>
+                <li>
+                    Tiene una prevalencia inferior a un umbral establecido (por ejemplo, en muchos países se sitúa en
+                    menos de 1 por cada 2.000 o 5.000 habitantes).
+                </li>
+                <li>
+                    Suele ser <strong>crónica, debilitante y potencialmente mortal.</strong>
+                </li>
+                <li>
+                    Presenta dificultades en su diagnóstico, tratamiento y acceso a atención médica adecuada.
+                </li>
+            </ul>
+            <p>En el caso de Colombia, según el Ministerio de Salud, una enfermedad huérfana es aquella
+                <strong>crónicamente debilitante, grave, que amenaza la vida y con una prevalencia menor a 1 por cada
+                    5.000 personas.</strong>
+            </p>
+            <p>En conjunto, aunque cada enfermedad afecta a pocos individuos, existen miles de enfermedades raras
+                identificadas, lo que hace que, en total, millones de personas en el mundo vivan con alguna de ellas.
+            </p>
+        </section>
+        <section class="caracteristicas" *ngIf="modalActivo === 'caracteristicas'">
+            <h2>Características de las enfermedades huérfanas</h2>
+            <p>Las enfermedades huérfanas o raras presentan una serie de características que las distinguen de otras
+                patologías más comunes. Sus principales rasgos son:</p>
+            <ol>
+                <li>
+                    <p><strong>Baja prevalencia</strong></p>
+                    <p>Se caracterizan por afectar a un número reducido de personas en la población. En muchos países,
+                        se consideran raras cuando afectan a menos de 1 por cada 2.000 o 5.000 habitantes.</p>
+                </li>
+                <li>
+                    <p><strong>Origen genético(en muchos casos)</strong></p>
+                    <p>Una gran proporción de estas enfermedades tiene un origen genético, es decir, están relacionadas
+                        con alteraciones en los genes. Suelen manifestarse desde el nacimiento o en la infancia, aunque
+                        algunas aparecen en la edad adulta.</p>
+                </li>
+                <li>
+                    <p><strong>Carácter crónico y debilitante</strong></p>
+                    <p>Son enfermedades de <strong>larga duración</strong>, generalmente permanentes, que acompañan a la
+                        persona durante toda su vida.</p>
+                </li>
+                <li>
+                    <p><strong>Alta complejidad</strong></p>
+                    <p>Suelen ser difíciles de diagnosticar y tratar debido a:</p>
+                    <ul>
+                        <li>
+                            <p>Síntomas poco comunes o variables</p>
+                        </li>
+                        <li>
+                            <p>Falta de conocimiento médico específico</p>
+                        </li>
+                        <li>
+                            <p>Escasa investigación disponible</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Gravedad y potencial riesgo de vida</strong></p>
+                    <p>Muchas de estas enfermedades son debilitantes y pueden comprometer seriamente la calidad de vida
+                        o incluso poner en riesgo la vida del paciente.</p>
+                </li>
+                <li>
+                    <p><strong>Diagnóstico tardío o incorrecto</strong></p>
+                    <p>Es frecuente que los pacientes pasen por múltiples consultas antes de obtener un diagnóstico
+                        adecuado, lo que retrasa el inicio del tratamiento.</p>
+                </li>
+                <li>
+                    <p><strong>Limitadas opciones de tratamiento</strong></p>
+                    <p>En muchos casos no existe cura, y los tratamientos disponibles son:</p>
+                    <ul>
+                        <li>
+                            <p>Sintomáticos (alivian síntomas)</p>
+                        </li>
+                        <li>
+                            <p>De alto costo</p>
+                        </li>
+                        <li>
+                            <p>De difícil acceso</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Impacto social y emocional</strong></p>
+                    <p>No solo afectan la salud física, sino también:</p>
+                    <ul>
+                        <li>
+                            <p>La salud mental del paciente</p>
+                        </li>
+                        <li>
+                            <p>La economía familiar</p>
+                        </li>
+                        <li>
+                            <p>La integridad social y educativadel paciente</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>En conjunto, estas características hacen que las enfermedades huérfanas representen un desafío importante
+                tanto para los sistemas de salud como para quienes las padecen y sus familias.</p>
+        </section>
+        <section class="causas" *ngIf="modalActivo === 'causas'">
+            <h2>Causas más Comunes</h2>
+            <p>Las enfermedades huérfanas o raras pueden tener distintos orígenes, pero en la mayoría de los casos se
+                deben a factores biológicos específicos. Estas son las causas más comunes:</p>
+
+            <ol>
+                <li>
+                    <p><strong>Alteraciones genéticas</strong></p>
+                    <p>Es la causa más frecuente. Se producen por mutaciones en uno o varios genes, que afectan el
+                        funcionamiento normal del organismo.</p>
+                    <ul>
+                        <li>
+                            <p>Pueden ser heredadas de los padres</p>
+                        </li>
+                        <li>
+                            <p>O aparecer de forma espontánea (sin antecedentes familiares)</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Trastornos cromosómicos</strong></p>
+                    <p>Ocurren cuando hay cambios en la estructura o número de los cromosomas.</p>
+                    <ul>
+                        <li>
+                            <p>Por ejemplo: duplicaciones, deleciones o reorganizaciones</p>
+                        </li>
+                        <li>
+                            <p>Suelen afectar múltiples sistemas del cuerpo</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Errores congénitos del metabolismo</strong></p>
+                    <p>Son fallas enzimáticas que impiden procesar correctamente ciertas sustancias.</p>
+                    <ul>
+                        <li>
+                            <p>Generan acumulación o déficit de compuestos esenciales</p>
+                        </li>
+                        <li>
+                            <p>Suelen manifestarse desde la infancia</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Factores ambientales (menos frecuentes)</strong></p>
+                    <p>Algunas enfermedades raras pueden estar relacionadas con:</p>
+                    <ul>
+                        <li>
+                            <p>Exposición a sustancias tóxicas</p>
+                        </li>
+                        <li>
+                            <p>Infecciones durante el embarazo</p>
+                        </li>
+                        <li>
+                            <p>Radiación u otros agentes externos</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Causas desconocidas</strong></p>
+                    <p>En un número considerable de casos, no se logra identificar una causa exacta, lo que dificulta
+                        aún más su diagnóstico y tratamiento.</p>
+                </li>
+            </ol>
+
+            <p>En general, se estima que alrededor del 70% de las enfermedades raras tienen un origen genético, lo que
+                explica por qué muchas aparecen en etapas tempranas de la vida y requieren un enfoque médico
+                especializado.</p>
+        </section>
+        <section class="importancia" *ngIf="modalActivo === 'importancia'">
+            <h2>Importancia del Diagnóstico Temprano</h2>
+            <ol>
+                <li>
+                    <p><strong>Inicio oportuno del tratamiento</strong></p>
+                    <p>Un diagnóstico temprano permite:</p>
+                    <ul>
+                        <li>
+                            <p>Comenzar tratamientos específicos o de control lo antes posible</p>
+                        </li>
+                        <li>
+                            <p>Reducir la progresión de la enfermedad</p>
+                        </li>
+                        <li>
+                            <p>Evitar daños irreversibles en el organismo</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Prevención de complicaciones</strong></p>
+                    <p>Muchas de estas enfermedades pueden agravarse rápidamente si no se tratan. Detectarlas a tiempo
+                        ayuda a:</p>
+                    <ul>
+                        <li>
+                            <p>Disminuir el riesgo de discapacidad</p>
+                        </li>
+                        <li>
+                            <p>Prevenir crisis o episodios severos</p>
+                        </li>
+                        <li>
+                            <p>Mejorar el pronóstico general</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Mejora en la calidad de vida</strong></p>
+                    <p>Con un manejo adecuado desde etapas tempranas:</p>
+                    <ul>
+                        <li>
+                            <p>El paciente puede desarrollar mejor sus capacidades</p>
+                        </li>
+                        <li>
+                            <p>Se reducen síntomas y limitaciones</p>
+                        </li>
+                        <li>
+                            <p>Se facilita la integración social, educativa y laboral</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Orientación genética y planificación familiar</strong></p>
+                    <p>Cuando la enfermedad tiene origen genético, el diagnóstico temprano permite:</p>
+                    <ul>
+                        <li>
+                            <p>Informar a la familia sobre riesgos de herencia</p>
+                        </li>
+                        <li>
+                            <p>Tomar decisiones informadas en futuros embarazos</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Reducción de la incertidumbre</strong></p>
+                    <p>Muchas personas pasan años sin saber qué tienen. Un diagnóstico temprano:</p>
+                    <ul>
+                        <li>
+                            <p>Evita múltiples consultas y exámenes innecesarios</p>
+                        </li>
+                        <li>
+                            <p>Reduce la ansiedad del paciente y su familia</p>
+                        </li>
+                        <li>
+                            <p>Permite acceder a redes de apoyo y especialistas</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Acceso a servicios y apoyo institucional</strong></p>
+                    <p>Identificar la enfermedad a tiempo facilita:</p>
+                    <ul>
+                        <li>
+                            <p>Acceder a tratamientos, terapias y medicamentos</p>
+                        </li>
+                        <li>
+                            <p>Ingresar a programas de salud especializados</p>
+                        </li>
+                        <li>
+                            <p>Obtener apoyo legal y social (según el país)</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section class="impacto" *ngIf="modalActivo === 'impacto'">
+            <h2>Impacto social y en la calidad de vida de los pacientes.</h2>
+            <ol>
+                <li>
+                    <p><strong>Limitaciones en la vida diaria</strong></p>
+                    <p>Muchas de estas enfermedades generan:</p>
+                    <ul>
+                        <li>
+                            <p>Discapacidad física o cognitiva</p>
+                        </li>
+                        <li>
+                            <p>Dependencia de otras personas</p>
+                        </li>
+                        <li>
+                            <p>Dificultades para realizar actividades cotidianas</p>
+                        </li>
+                    </ul>
+                    <p>Esto puede reducir significativamente la autonomía del paciente.</p>
+                </li>
+                <li>
+                    <p><strong>Afectación emocional y psicológica</strong></p>
+                    <p>Los pacientes suelen enfrentar:</p>
+                    <ul>
+                        <li>
+                            <p>Ansiedad, depresión o estrés</p>
+                        </li>
+                        <li>
+                            <p>Sentimientos de aislamiento o incomprensión</p>
+                        </li>
+                        <li>
+                            <p>Frustración por la falta de tratamientos efectivos</p>
+                        </li>
+                    </ul>
+                    <p>El desconocimiento social de estas enfermedades puede aumentar la sensación de soledad.</p>
+                </li>
+                <li>
+                    <p><strong>Impacto en la familia</strong></p>
+                    <p>El entorno familiar también se ve afectado:</p>
+                    <ul>
+                        <li>
+                            <p>Cambios en la dinámica familiar</p>
+                        </li>
+                        <li>
+                            <p>Sobrecarga física y emocional de cuidadores</p>
+                        </li>
+                        <li>
+                            <p>Estrés constante por la atención del paciente</p>
+                        </li>
+                    </ul>
+                    <p>En muchos casos, un miembro de la familia debe asumir el rol de cuidador principal.</p>
+                </li>
+                <li>
+                    <p><strong>Dificultades económicas</strong></p>
+                    <p>El tratamiento de estas enfermedades suele implicar:</p>
+                    <ul>
+                        <li>
+                            <p>Altos costos médicos y medicamentos</p>
+                        </li>
+                        <li>
+                            <p>Gastos en terapias, transporte y cuidados especiales</p>
+                        </li>
+                        <li>
+                            <p>Pérdida de ingresos (por parte del paciente o familiares)</p>
+                        </li>
+                    </ul>
+                    <p>Esto puede generar una carga financiera importante.</p>
+                </li>
+                <li>
+                    <p><strong>Barreras en educación y empleo</strong></p>
+                    <p>Las personas con enfermedades raras pueden enfrentar:</p>
+                    <ul>
+                        <li>
+                            <p>Dificultades para acceder o mantenerse en el sistema educativo</p>
+                        </li>
+                        <li>
+                            <p>Limitaciones para conseguir o conservar un empleo</p>
+                        </li>
+                        <li>
+                            <p>Falta de adaptaciones en entornos laborales o académicos</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Acceso limitado a servicios de salud</strong></p>
+                    <p>Debido a su baja prevalencia:</p>
+                    <ul>
+                        <li>
+                            <p>Hay pocos especialistas</p>
+                        </li>
+                        <li>
+                            <p>Los diagnósticos pueden tardar años</p>
+                        </li>
+                        <li>
+                            <p>Los tratamientos son escasos o difíciles de conseguir</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Estigmatización y falta de inclusión</strong></p>
+                    <p>El desconocimiento social puede provocar:</p>
+                    <ul>
+                        <li>
+                            <p>Discriminación</p>
+                        </li>
+                        <li>
+                            <p>Falta de empatía</p>
+                        </li>
+                        <li>
+                            <p>Exclusión social</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.divAplicativo,
+.divEnfermedades {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divAplicativo:hover,
+.divEnfermedades:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.aplicativo,
+.enfermedades {
+    height: 100%;
+    padding: 28px 32px;          /* espacio interno entre texto y borde */
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.divAplicativo:hover .aplicativo,
+.divEnfermedades:hover .enfermedades {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.divAplicativo h3,
+.divEnfermedades h3 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;          
+    margin-bottom: 16px;
+}
+
+.divAplicativo p,
+.divEnfermedades p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 16px;
+    text-align: justify;         
+}

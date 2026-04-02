@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="cards-grid">
+        <div class="card" (click)="abrirModal('geneticas')">
+            <img src="imgTipos/geneticas.jpg" alt="Enfermedades Genéticas">
+            <h2>Enfermedades Genéticas</h2>   
+        </div>
+        <div class="card" (click)="abrirModal('metabolicas')">
+            <img src="imgTipos/metabolicas.jpg" alt="Enfermedades Metabólicas">
+            <h2>Enfermedades Metabólicas</h2>
+        </div>
+        <div class="card" (click)="abrirModal('neurológicas')">
+            <img src="imgTipos/neurologicas-raras.jpg" alt="Enfermedades Neurológicas Raras">
+            <h2>Enfermedades Neurológicas Raras</h2>
+        </div>
+        <div class="card" (click)="abrirModal('autoinmunes')">
+            <img src="imgTipos/autoinmunes-raras.jpg" alt="Enfermedades Autoinmunes Raras">
+            <h2>Enfermedades Autoinmunes Raras</h2>
+        </div>
+        <div class="card" (click)="abrirModal('infecciosas')">
+            <img src="imgTipos/infecciosas-raras.jpg" alt="Enfermedades Infecciosas">
+            <h2>Enfermedades Infecciosas Raras</h2>
+        </div>
+        <div class="card" (click)="abrirModal('degenerativas')">
+            <img src="imgTipos/degenerativas.jpg" alt="Enfermedades Degenerativas">
+            <h2>Enfermedades Degenerativas</h2>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" [class.active]="modalVisible" (click)="onOverlayClick($event)">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <button class="modal-close" (click)="cerrarModal()">
+            <span><img src="imgQueSon/flecha.png" alt="flecha"></span>
+            <span class="texto">Salir</span>
+        </button>
+    </div>
+</div>
