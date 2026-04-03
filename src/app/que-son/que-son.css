@@ -93,7 +93,9 @@
 }
 
 .modal-close {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     margin: 24px 0 0 auto;
     width: 52px;
     height: 52px;
@@ -109,6 +111,7 @@
     cursor: pointer;
     transition: width 0.3s ease;
     white-space: nowrap;
+    display: block;
 }
 
 .modal-close span:first-child {

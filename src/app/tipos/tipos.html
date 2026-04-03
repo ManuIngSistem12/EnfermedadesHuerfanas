@@ -2,7 +2,7 @@
     <div class="cards-grid">
         <div class="card" (click)="abrirModal('geneticas')">
             <img src="imgTipos/geneticas.jpg" alt="Enfermedades Genéticas">
-            <h2>Enfermedades Genéticas</h2>   
+            <h2>Enfermedades Genéticas</h2>
         </div>
         <div class="card" (click)="abrirModal('metabolicas')">
             <img src="imgTipos/metabolicas.jpg" alt="Enfermedades Metabólicas">
@@ -33,5 +33,680 @@
             <span><img src="imgQueSon/flecha.png" alt="flecha"></span>
             <span class="texto">Salir</span>
         </button>
+        <section class="geneticas" *ngIf="modalActivo === 'geneticas'">
+            <h2><strong>Fibrosis Quística</strong></h2>
+            <img src="imgTipos/fibrosis-quistica.jpg" alt="Fibrosis Quística">
+            <p><strong>Descripción</strong></p>
+            <p>Grupo de enfermedades genéticas que provocan debilitamiento y pérdida progresiva de los músculos.
+            </p>
+            <p><strong>Sintomas más comunes:</strong></p>
+            <ul>
+                <li>Debilidad muscular progresiva</li>
+                <li>Dificultad para caminar</li>
+                <li>Caídas frecuentes</li>
+                <li>Pérdida de masa muscular</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Generalmente inician en la infancia</li>
+                <li>Puede progresar en la adolescencia o adultez</li>
+            </ul>
+            <p><strong>Trjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Enfermedad genética</li>
+                <li>Sistema Afectado: Sistema muscular</li>
+                <li>Tratamiento: Terapia física, medicamentos y manejo de síntomas</li>
+            </ul>
+
+            <h2><strong>Distrofia muscular</strong></h2>
+            <img src="imgTipos/distrofia-muscular.jpg" alt="Distrofia muscular">
+            <p><strong>Descripcion</strong></p>
+            <p>Grupo de enfermedades genéticas que provocan debilitamiento y pérdida progresiva de los músculos.
+            </p>
+            <p><Strong>Síntomas más comunes</Strong></p>
+            <ul>
+                <li>Debilidad muscular progresiva</li>
+                <li>Dificultad para caminar</li>
+                <li>Caídas frecuentes</li>
+                <li>Pérdida de masa muscular</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Generalmente inician en la infancia</li>
+                <li>Puede progresar en la adolescencia o adultez</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Enfermedad genética</li>
+                <li>Sistema Afectado: Sistema muscular</li>
+                <li>Tratamiento: Terapia física, medicamentos y manejo de síntomas</li>
+            </ul>
+
+
+            <h2><strong>Síndrome de Down</strong></h2>
+            <img src="imgTipos/sindrome-down.jpg" alt="Síndrome de Down">
+            <p><strong>Descripción</strong></p>
+            <p>Alteración genética causada por una copia extra del cromosoma 21 (trisomía 21), que afecta el
+                desarrollo físico e intelectual.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Retraso en el desarrollo intelectual</li>
+                <li>Rasgos faciales característicos</li>
+                <li>Hipotonía (tono muscular bajo)</li>
+                <li>Mayor riesgo de problemas de salud como enfermedades cardíacas y problemas de visión</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Generalmente nacen con el síndrome</li>
+                <li>Acompañamiento de por vida</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Trastorno cromosómico</li>
+                <li>Sistema Afectado: Múltiples(cognitivo y físico)</li>
+                <li>Tratamiento: Terapia ocupacional, fisioterapia y apoyo educativo</li>
+            </ul>
+
+
+        </section>
+        <section class="metabolicas" *ngIf="modalActivo === 'metabolicas'">
+            <h2><strong>Fenilcetonuria</strong></h2>
+            <img src="imgTipos/fenilcetonuria.jpg" alt="Fenilcetonuria">
+            <p><strong>Descripción</strong></p>
+            <p>Trastorno genético en el que el cuerpo no puede descomponer la fenilalanina (un aminoácido), lo
+                que provoca acumulación tóxica.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Retraso mental si no se trata</li>
+                <li>Convulsiones</li>
+                <li>Olor fuerte en la orina</li>
+                <li>Piel y cabello más claros</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Principalmente recién nacidos y niños (se detecta al nacer)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Metabólica genética</li>
+                <li>Diagnóstico: Prueba de tamizaje neonatal</li>
+                <li>Tratamiento: Dieta estricta baja en fenilalanina</li>
+            </ul>
+
+            <h2><strong>Enfermedad de Gaucher</strong></h2>
+            <img src="imgTipos/gaucher.jpg" alt="Enfermedad de Gaucher">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad hereditaria donde se acumulan grasas en órganos como el hígado y el bazo debido a
+                falta de una enzima.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Agrandamiento del hígado y bazo</li>
+                <li>Dolor óseo</li>
+                <li>Fatiga</li>
+                <li>Moretones fáciles</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Pueden aparecer en niños o adultos, dependiendo del tipo</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Almacenamiento lisosomal</li>
+                <li>Diagnóstico: Pruebas enzimáticas/genéticas</li>
+                <li>Tratamiento: Terapia de reemplazo enzimático</li>
+            </ul>
+
+            <h2><strong>Galactosemia</strong></h2>
+            <img src="imgTipos/galactosemia.jpg" alt="Galactosemia">
+            <p><strong>Descripción</strong></p>
+            <p>Trastorno que impide procesar la galactosa (azúcar presente en la leche).</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Ictericia (piel amarilla)</li>
+                <li>Vómitos</li>
+                <li>Daño hepático</li>
+                <li>Letargo</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Recién nacidos (aparece al consumir leche)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Metabólica hereditaria</li>
+                <li>Diagnóstico: Tamizaje neonatal</li>
+                <li>Tratamiento: Dieta sin galactosa/lactosa</li>
+            </ul>
+
+            <h2><strong>Enfermedad de Tay-Sachs</strong></h2>
+            <img src="imgTipos/tay-sachs.jpg" alt="Enfermedad de Tay-Sachs">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad genética rara que causa acumulación de sustancias grasas en el cerebro, afectando el
+                sistema nervioso.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Pérdida de habilidades motoras</li>
+                <li>Convulsiones</li>
+                <li>Ceguera progresiva</li>
+                <li>Debilidad muscular</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Principalmente bebés (forma infantil)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodegenerativa/metabólica</li>
+                <li>Diagnóstico: Pruebas genéticas</li>
+                <li>Tratamiento: No tiene cura (manejo sintomático)</li>
+            </ul>
+
+            <h2><strong>Glucogenosis</strong></h2>
+            <img src="imgTipos/glucogenosis.jpg" alt="Glucogenosis">
+            <p><strong>Descripción</strong></p>
+            <p>Grupo de enfermedades donde el cuerpo no puede almacenar o usar correctamente el glucógeno
+                (fuente de energía).</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Hipoglucemia (bajo azúcar en sangre)</li>
+                <li>Debilidad muscular</li>
+                <li>Agrandamiento del hígado</li>
+                <li>Fatiga</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Generalmente niños, aunque algunos tipos afectan adultos</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Metabólica hereditaria</li>
+                <li>Diagnóstico: Pruebas genéticas y biopsias</li>
+                <li>Tratamiento: Dieta especial y control médico</li>
+            </ul>
+        </section>
+        <section class="neurológicas" *ngIf="modalActivo === 'neurológicas'">
+            <h2><strong>Enfermedad de Huntington</strong></h2>
+            <img src="imgTipos/huntington.jpg" alt="Enfermedad de Huntington">
+            <p><strong>Descripción</strong></p>
+            <p>Trastorno genético hereditario que provoca la degeneración progresiva de las neuronas en el cerebro.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Movimientos involuntarios (corea)</li>
+                <li>Problemas de coordinación</li>
+                <li>Cambios de conducta (depresión, irritabilidad)</li>
+                <li>Deterioro cognitivo</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Principalmente adultos (30–50 años), aunque puede aparecer antes o después</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodegenerativa hereditaria</li>
+                <li>Diagnóstico: Pruebas genéticas</li>
+                <li>Tratamiento: No tiene cura (manejo de síntomas y apoyo multidisciplinario)</li>
+            </ul>
+
+            <h2><strong>Esclerosis Lateral Amiotrófica (ELA)</strong></h2>
+            <img src="imgTipos/ela.jpg" alt="Esclerosis Lateral Amiotrófica">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad neurodegenerativa que afecta las neuronas motoras, responsables del movimiento muscular.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Debilidad muscular progresiva</li>
+                <li>Dificultad para hablar y tragar</li>
+                <li>Parálisis progresiva</li>
+                <li>Problemas respiratorios en fases avanzadas</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos entre 40 y 70 años</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodegenerativa</li>
+                <li>Diagnóstico: Evaluación clínica y estudios neurológicos</li>
+                <li>Tratamiento: No tiene cura (manejo de síntomas y soporte respiratorio)</li>
+            </ul>
+
+            <h2><strong>Atrofia Muscular Espinal (AME)</strong></h2>
+            <img src="imgTipos/ame.jpg" alt="Atrofia Muscular Espinal">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad genética que afecta las neuronas motoras, causando debilidad y pérdida muscular.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Debilidad muscular severa</li>
+                <li>Dificultad para moverse</li>
+                <li>Problemas respiratorios</li>
+                <li>Retraso en el desarrollo motor</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Principalmente bebés y niños (aunque hay formas en adultos)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodegenerativa genética</li>
+                <li>Diagnóstico: Pruebas genéticas</li>
+                <li>Tratamiento: Terapias génicas, soporte respiratorio y fisioterapia</li>
+            </ul>
+
+            <h2><strong>Síndrome de Rett</strong></h2>
+            <img src="imgTipos/rett.jpg" alt="Síndrome de Rett">
+            <p><strong>Descripción</strong></p>
+            <p>Trastorno neurológico genético que afecta el desarrollo cerebral, principalmente en niñas.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Pérdida de habilidades adquiridas</li>
+                <li>Movimientos repetitivos de manos</li>
+                <li>Problemas del habla</li>
+                <li>Dificultades motoras y cognitivas</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Niñas desde la primera infancia (6–18 meses)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodesarrollo genético</li>
+                <li>Diagnóstico: Evaluación clínica y pruebas genéticas</li>
+                <li>Tratamiento: No tiene cura (terapias de apoyo y manejo de síntomas)</li>
+            </ul>
+        </section>
+        <section class="autoinmunes" *ngIf="modalActivo === 'autoinmunes'">
+            <h2><strong>Lupus Eritematoso Sistémico</strong></h2>
+            <img src="imgTipos/lupus.jpg" alt="Lupus Eritematoso Sistémico">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad autoinmune multisistémica en la que el sistema inmune ataca tejidos propios, afectando piel,
+                articulaciones, riñones, corazón y sistema nervioso.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Erupción en mariposa (malar)</li>
+                <li>Artritis y dolor articular</li>
+                <li>Fotosensibilidad</li>
+                <li>Fatiga crónica severa</li>
+                <li>Nefritis lúpica (afectación renal)</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Mujeres en edad fértil (15–45 años)</li>
+                <li>Predominio femenino con relación 9:1 respecto a hombres</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Enfermedad autoinmune sistémica</li>
+                <li>Diagnóstico: Anticuerpos anti-dsDNA, anti-Sm y criterios ACR/EULAR</li>
+                <li>Tratamiento: Hidroxicloroquina, corticosteroides e inmunosupresores (sin cura definitiva)</li>
+            </ul>
+
+            <h2><strong>Síndrome de Sjögren Primario</strong></h2>
+            <img src="imgTipos/sjogren.jpg" alt="Síndrome de Sjögren Primario">
+            <p><strong>Descripción</strong></p>
+            <p>Exocrinopatía autoinmune con infiltración linfocítica de glándulas salivales y lagrimales, produciendo
+                sequedad mucosa crónica y afectación sistémica.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Xerostomía (sequedad bucal persistente)</li>
+                <li>Xeroftalmia (ojo seco crónico)</li>
+                <li>Fatiga severa</li>
+                <li>Artralgia y dolor muscular</li>
+                <li>Neuropatía periférica</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Mujeres adultas entre 40–60 años</li>
+                <li>Relación femenino:masculino de 9:1</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Exocrinopatía autoinmune sistémica</li>
+                <li>Diagnóstico: Anticuerpos anti-SSA/Ro y anti-SSB/La; biopsia de glándula salival menor</li>
+                <li>Tratamiento: Lágrimas artificiales, hidroxicloroquina y pilocarpina (manejo sintomático)</li>
+            </ul>
+
+            <h2><strong>Esclerosis Sistémica (Esclerodermia)</strong></h2>
+            <img src="imgTipos/esclerodermia.jpg" alt="Esclerosis Sistémica">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad autoinmune caracterizada por fibrosis progresiva de la piel y órganos internos, acompañada de
+                vasculopatía obliterante que afecta múltiples sistemas.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Fenómeno de Raynaud (cambio de color en dedos por frío)</li>
+                <li>Engrosamiento y endurecimiento cutáneo</li>
+                <li>Disfagia (dificultad para tragar)</li>
+                <li>Disnea por fibrosis pulmonar</li>
+                <li>Telangiectasias (pequeños vasos visibles en piel)</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos entre 30–50 años</li>
+                <li>Pico de inicio en mujeres entre 45–55 años</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Enfermedad autoinmune fibrótica sistémica</li>
+                <li>Diagnóstico: Anticuerpos anti-topoisomerasa I (Scl-70), anti-centrómero; capilaroscopia</li>
+                <li>Tratamiento: No tiene cura; micofenolato para fibrosis pulmonar, bloqueadores de calcio para Raynaud
+                </li>
+            </ul>
+
+            <h2><strong>Síndrome Antifosfolípido</strong></h2>
+            <img src="imgTipos/antifosfolipido.jpg" alt="Síndrome Antifosfolípido">
+            <p><strong>Descripción</strong></p>
+            <p>Trastorno autoinmune caracterizado por trombosis vasculares recurrentes y morbilidad obstétrica, asociado
+                a la presencia persistente de anticuerpos antifosfolípidos en sangre.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Trombosis venosa o arterial recurrente</li>
+                <li>Abortos espontáneos repetidos</li>
+                <li>Trombocitopenia (plaquetas bajas)</li>
+                <li>Livedo reticularis (patrón moteado en piel)</li>
+                <li>Migraña y accidentes cerebrovasculares</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos jóvenes entre 20–40 años</li>
+                <li>Especialmente mujeres en edad fértil</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Trastorno autoinmune trombofílico</li>
+                <li>Diagnóstico: Anticuerpos anticardiolipina, anti-β2GPI y anticoagulante lúpico (dos determinaciones
+                    con ≥12 semanas)</li>
+                <li>Tratamiento: Anticoagulación con heparina o warfarina; aspirina en dosis bajas</li>
+            </ul>
+
+            <h2><strong>Encefalitis Autoinmune Anti-NMDA</strong></h2>
+            <img src="imgTipos/encefalitis_nmda.jpg" alt="Encefalitis Autoinmune Anti-NMDA">
+            <p><strong>Descripción</strong></p>
+            <p>Encefalitis autoinmune con anticuerpos dirigidos contra receptores NMDA del cerebro, que provoca una
+                presentación clínica dramática con psicosis aguda, movimientos anormales y compromiso autonómico.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Psicosis aguda (alucinaciones y conducta desorganizada)</li>
+                <li>Movimientos involuntarios anormales</li>
+                <li>Disminución progresiva del nivel de conciencia</li>
+                <li>Convulsiones</li>
+                <li>Disfunción autonómica (alteraciones en ritmo cardíaco y presión arterial)</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Predominio en mujeres jóvenes y niñas (media: 21 años)</li>
+                <li>En mujeres adultas, frecuentemente asociada a teratoma ovárico</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Encefalitis autoinmune neurológica</li>
+                <li>Diagnóstico: Anticuerpos anti-NR1 en líquido cefalorraquídeo; RMN cerebral y EEG</li>
+                <li>Tratamiento: Corticosteroides, inmunoglobulinas, plasmaféresis; extirpación del teratoma si está
+                    presente</li>
+            </ul>
+        </section>
+        <section class="infecciosas" *ngIf="modalActivo === 'infecciosas'">
+            <h2><strong>Enfermedad de Whipple</strong></h2>
+            <img src="imgTipos/whipple.jpg" alt="Enfermedad de Whipple">
+            <p><strong>Descripción</strong></p>
+            <p>Infección bacteriana sistémica crónica causada por Tropheryma whipplei, que afecta principalmente el
+                intestino delgado pero puede comprometer articulaciones, sistema nervioso central y corazón.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Diarrea crónica con malabsorción</li>
+                <li>Pérdida de peso severa y progresiva</li>
+                <li>Artritis migratoria recurrente</li>
+                <li>Fiebre prolongada de origen desconocido</li>
+                <li>Deterioro cognitivo y oftalmoplejía (en afectación neurológica)</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos entre 40–60 años</li>
+                <li>Predominio marcado en hombres (relación 8:1)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Infección bacteriana sistémica crónica</li>
+                <li>Diagnóstico: Biopsia duodenal con tinción PAS; PCR para T. whipplei en tejidos y LCR</li>
+                <li>Tratamiento: Ceftriaxona IV seguida de trimetoprim-sulfametoxazol oral por 1–2 años</li>
+            </ul>
+
+            <h2><strong>Noma (Cancrum Oris)</strong></h2>
+            <img src="imgTipos/noma.jpg" alt="Noma Cancrum Oris">
+            <p><strong>Descripción</strong></p>
+            <p>Gangrena orofacial fulminante de origen infeccioso polimicrobiano que destruye tejidos blandos y hueso de
+                la cara, asociada a desnutrición severa e inmunosupresión extrema.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Úlcera gingival inicial de rápida progresión</li>
+                <li>Necrosis y destrucción orofacial extensa</li>
+                <li>Edema facial severo con mal olor</li>
+                <li>Fiebre alta y deterioro general</li>
+                <li>Desfiguración permanente en sobrevivientes</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Principalmente niños entre 2–6 años</li>
+                <li>Zonas de extrema pobreza en África subsahariana</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Gangrena infecciosa polimicrobiana orofacial</li>
+                <li>Diagnóstico: Clínico; cultivo de lesiones y evaluación nutricional</li>
+                <li>Tratamiento: Antibióticos (penicilina + metronidazol), nutrición terapéutica y cirugía
+                    reconstructiva tardía</li>
+            </ul>
+
+            <h2><strong>Melioidosis</strong></h2>
+            <img src="imgTipos/melioidosis.jpg" alt="Melioidosis">
+            <p><strong>Descripción</strong></p>
+            <p>Infección causada por Burkholderia pseudomallei, bacteria del suelo y agua de regiones tropicales, que
+                puede producir desde neumonía grave hasta sepsis diseminada con abscesos en múltiples órganos.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Neumonía grave con fiebre alta</li>
+                <li>Abscesos en hígado, bazo, pulmón y próstata</li>
+                <li>Septicemia con compromiso multiorgánico</li>
+                <li>Infecciones cutáneas y de tejidos blandos</li>
+                <li>Reactivación tardía años después de la infección inicial</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos con factores de riesgo: diabetes, enfermedad renal crónica, alcoholismo</li>
+                <li>Personas expuestas a suelo y agua en Asia del Sudeste y norte de Australia</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Infección bacteriana tropical zoonótica</li>
+                <li>Diagnóstico: Cultivo de sangre, esputo u orina; serología y PCR específica</li>
+                <li>Tratamiento: Ceftazidima o meropenem IV (fase intensiva), seguido de trimetoprim-sulfametoxazol oral
+                    por 3–6 meses</li>
+            </ul>
+
+            <h2><strong>Fiebre de las Montañas Rocosas</strong></h2>
+            <img src="imgTipos/fiebre_rocosas.jpg" alt="Fiebre de las Montañas Rocosas">
+            <p><strong>Descripción</strong></p>
+            <p>Rickettsiosis grave causada por Rickettsia rickettsii, transmitida por garrapatas, que produce vasculitis
+                sistémica con afectación de pequeños vasos en múltiples órganos y alta mortalidad sin tratamiento
+                precoz.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Fiebre alta de inicio súbito</li>
+                <li>Exantema petequial que inicia en muñecas y tobillos</li>
+                <li>Cefalea intensa y mialgias</li>
+                <li>Náuseas, vómitos y dolor abdominal</li>
+                <li>Compromiso neurológico y falla multiorgánica en casos graves</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Niños menores de 10 años (mayor mortalidad)</li>
+                <li>Adultos con exposición a garrapatas en zonas endémicas de América</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Rickettsiosis transmitida por garrapatas</li>
+                <li>Diagnóstico: Clínico-epidemiológico urgente; serología por inmunofluorescencia indirecta y PCR</li>
+                <li>Tratamiento: Doxiciclina de inicio inmediato (no esperar confirmación); duración mínima 5–7 días
+                </li>
+            </ul>
+
+            <h2><strong>Lepra (Enfermedad de Hansen)</strong></h2>
+            <img src="imgTipos/lepra.jpg" alt="Lepra Enfermedad de Hansen">
+            <p><strong>Descripción</strong></p>
+            <p>Infección crónica causada por Mycobacterium leprae que afecta piel, nervios periféricos y mucosas, con
+                espectro clínico variable según la respuesta inmune del huésped y potencial de generar discapacidad
+                permanente.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Manchas cutáneas hipopigmentadas con pérdida de sensibilidad</li>
+                <li>Engrosamiento de nervios periféricos palpables</li>
+                <li>Debilidad y parálisis de manos y pies (garra ulnar, pie caído)</li>
+                <li>Pérdida de cejas y pestañas (madarosis)</li>
+                <li>Úlceras plantares por neuropatía sensitiva</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Cualquier edad; pico en adultos entre 20–30 años y niños entre 10–14 años</li>
+                <li>Endémica en Brasil, India, Indonesia y África subsahariana</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Infección bacteriana crónica por micobacteria</li>
+                <li>Diagnóstico: Clínico; baciloscopia de linfa cutánea y biopsia de piel o nervio</li>
+                <li>Tratamiento: Poliquimioterapia OMS (rifampicina + dapsona ± clofazimina) por 6 a 12 meses según tipo
+                </li>
+            </ul>
+        </section>
+        <section class="degenerativas" *ngIf="modalActivo === 'degenerativas'">
+            <h2><strong>Ataxia de Friedreich</strong></h2>
+            <img src="imgTipos/friedreich.jpg" alt="Ataxia de Friedreich">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad neurodegenerativa hereditaria autosómica recesiva causada por mutaciones en el gen FXN, que
+                provoca degeneración progresiva del cerebelo, médula espinal y nervios periféricos, con afectación
+                cardíaca asociada.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Ataxia progresiva de la marcha y extremidades</li>
+                <li>Disartria (dificultad para hablar)</li>
+                <li>Miocardiopatía hipertrófica</li>
+                <li>Pérdida de reflejos osteotendinosos</li>
+                <li>Escoliosis y pie cavo</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Inicio típico entre 5–15 años</li>
+                <li>Forma tardía: inicio después de los 25 años (menos frecuente)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Ataxia hereditaria neurodegenerativa</li>
+                <li>Diagnóstico: Prueba genética (expansión GAA en gen FXN); electromiografía; ecocardiograma</li>
+                <li>Tratamiento: Omaveloxolona (aprobada 2023); fisioterapia, cardiología y ortopedia como soporte</li>
+            </ul>
+
+            <h2><strong>Enfermedad de Kennedy (Atrofia Muscular Bulboespinal)</strong></h2>
+            <img src="imgTipos/kennedy.jpg" alt="Enfermedad de Kennedy">
+            <p><strong>Descripción</strong></p>
+            <p>Enfermedad neuromuscular degenerativa ligada al cromosoma X causada por expansión de tripletes CAG en el
+                gen del receptor de andrógenos, que provoca degeneración lenta de neuronas motoras inferiores y
+                endocrinopatía.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Debilidad muscular proximal lentamente progresiva</li>
+                <li>Fasciculaciones en lengua y cara</li>
+                <li>Disfagia y disartria</li>
+                <li>Ginecomastia e infertilidad masculina</li>
+                <li>Temblor postural en manos</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Hombres adultos entre 30–50 años</li>
+                <li>Las mujeres son portadoras asintomáticas</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Enfermedad de neurona motora inferior ligada al X</li>
+                <li>Diagnóstico: Prueba genética (expansión CAG en gen AR); electromiografía; CPK elevada</li>
+                <li>Tratamiento: No tiene cura; fisioterapia, fonoaudiología y manejo endocrino sintomático</li>
+            </ul>
+
+            <h2><strong>Degeneración Corticobasal</strong></h2>
+            <img src="imgTipos/corticobasal.jpg" alt="Degeneración Corticobasal">
+            <p><strong>Descripción</strong></p>
+            <p>Tauopatía neurodegenerativa progresiva y fatal que afecta la corteza cerebral y los ganglios basales,
+                produciendo una combinación única de síntomas motores y cognitivos asimétricos sin tratamiento
+                modificador disponible.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Rigidez y apraxia asimétrica de una extremidad</li>
+                <li>Síndrome del miembro extraño (alien limb)</li>
+                <li>Temblor irregular e incontrolable</li>
+                <li>Deterioro cognitivo y afasia</li>
+                <li>Dificultad para controlar los movimientos oculares</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Adultos mayores entre 60–80 años</li>
+                <li>Sin predilección clara por sexo</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Tauopatía neurodegenerativa cortical y subcortical</li>
+                <li>Diagnóstico: Criterios clínicos; RMN (atrofia cortical asimétrica); PET con marcadores tau</li>
+                <li>Tratamiento: No tiene cura; levodopa con respuesta limitada; rehabilitación motora y cognitiva</li>
+            </ul>
+
+            <h2><strong>Síndrome de Hallervorden-Spatz (NBIA)</strong></h2>
+            <img src="imgTipos/hallervorden_spatz.jpg" alt="Síndrome de Hallervorden-Spatz">
+            <p><strong>Descripción</strong></p>
+            <p>Grupo de enfermedades raras caracterizadas por la acumulación anormal de hierro en los ganglios basales
+                del cerebro, causando deterioro neurológico progresivo con trastornos del movimiento severos desde la
+                infancia.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Distonía progresiva generalizada</li>
+                <li>Rigidez extrapiramidal severa</li>
+                <li>Disartria y disfagia</li>
+                <li>Deterioro cognitivo progresivo</li>
+                <li>Degeneración retiniana y pérdida visual</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Forma clásica: niños entre 1–10 años</li>
+                <li>Forma atípica: adolescentes y adultos jóvenes (10–25 años)</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Neurodegeneración con acumulación cerebral de hierro (NBIA)</li>
+                <li>Diagnóstico: RMN cerebral (signo del ojo de tigre en globo pálido); prueba genética (gen PANK2)</li>
+                <li>Tratamiento: No tiene cura; quelantes de hierro en investigación; manejo de distonía con baclofeno y
+                    toxina botulínica</li>
+            </ul>
+
+            <h2><strong>Enfermedad de Kugelberg-Welander (AME tipo III)</strong></h2>
+            <img src="imgTipos/kugelberg_welander.jpg" alt="Enfermedad de Kugelberg-Welander">
+            <p><strong>Descripción</strong></p>
+            <p>Forma leve de atrofia muscular espinal de inicio tardío causada por la deficiencia de la proteína SMN,
+                que produce degeneración de neuronas motoras con debilidad muscular proximal lentamente progresiva y
+                expectativa de vida cercana a la normal.</p>
+            <p><strong>Síntomas más comunes</strong></p>
+            <ul>
+                <li>Debilidad muscular proximal en caderas y muslos</li>
+                <li>Dificultad para levantarse del suelo o subir escaleras</li>
+                <li>Marcha anadeante (bamboleante)</li>
+                <li>Fasciculaciones musculares</li>
+                <li>Escoliosis en casos de larga evolución</li>
+            </ul>
+            <p><strong>Grupos de edad afectados:</strong></p>
+            <ul>
+                <li>Niños y adolescentes entre 2–17 años</li>
+                <li>La mayoría logra caminar de forma independiente en la infancia</li>
+            </ul>
+            <p><strong>Tarjeta informativa</strong></p>
+            <ul>
+                <li>Tipo: Atrofia muscular espinal neuromuscular degenerativa (AME tipo III)</li>
+                <li>Diagnóstico: Prueba genética (deleción gen SMN1); electromiografía; biopsia muscular</li>
+                <li>Tratamiento: Nusinersen o risdiplam (modificadores de la enfermedad); fisioterapia y seguimiento
+                    ortopédico</li>
+            </ul>
+
+        </section>
     </div>
 </div>

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-tipos',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './tipos.html',
   styleUrl: './tipos.css',
 })

@@ -27,7 +27,7 @@
 .aplicativo,
 .enfermedades {
     height: 100%;
-    padding: 28px 32px;          /* espacio interno entre texto y borde */
+    padding: 28px 32px;         
     box-sizing: border-box;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;

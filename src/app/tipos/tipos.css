@@ -23,10 +23,10 @@
     position: relative;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: transform 0.3s ease;
 }
 
@@ -36,14 +36,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0%;                         
-    background: linear-gradient(0deg, #0a1a3a, #3a0ca3);  
+    height: 0%;
+    background: linear-gradient(0deg, #0a1a3a, #3a0ca3);
     transition: height 0.5s ease;
     z-index: 0;
 }
 
 .card:hover::before {
-    height: 100%;                        
+    height: 100%;
 }
 
 .card:hover {
@@ -63,6 +63,16 @@
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 16px;
+}
+
+section img {
+    margin-left: 155px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .card h2 {
@@ -124,7 +134,9 @@
 }
 
 .modal-close {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     margin: 24px 0 0 auto;
     width: 52px;
     height: 52px;
