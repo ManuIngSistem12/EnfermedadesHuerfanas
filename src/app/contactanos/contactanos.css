@@ -1,0 +1,90 @@
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.contact-box {
+  display: flex;
+  width: 70%;
+  max-width: 900px;
+  height: 400px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  width: 50%;
+}
+
+.contact-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.contact-info {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info input,
+.contact-info textarea {
+  border: none;
+
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px; 
+  outline: none; 
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  background: transparent;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-info input:hover,
+.contact-info textarea:hover {
+  border-bottom: 2px solid #0a1a3a; 
+  outline: none;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+  border-bottom: 2px solid #0a1a3a; 
+  outline: none;
+}
+
+.contact-info button {
+  padding: 10px;
+  border: none;
+  background: linear-gradient(90deg, #0a1a3a, #3a0ca3);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
