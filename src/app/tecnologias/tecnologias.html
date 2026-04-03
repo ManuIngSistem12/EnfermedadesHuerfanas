@@ -1,1 +1,121 @@
-<p>tecnologias works!</p>
+<div class="contenedor">
+    <section (click)="abrirModal(modal1)">
+        <p>Angular</p>
+        <img src="imgTecnologias/angular.png" alt="Angular">
+    </section>
+
+    <section (click)="abrirModal(modal2)">
+        <p>SqlServer</p>
+        <img src="imgTecnologias/sql.png" alt="SQL Server">
+    </section>
+
+    <section (click)="abrirModal(modal3)">
+        <p>Laravel</p>
+        <img src="imgTecnologias/laravel.png" alt="Laravel">
+    </section>
+
+    <section (click)="abrirModal(modal4)">
+        <p>GitHub</p>
+        <img src="imgTecnologias/git.png" alt="GitHub">
+    </section>
+</div>
+
+<div class="modal-overlay" [class.activo]="modalActivo" (click)="cerrarModal()">
+    <div class="modal-contenido" (click)="$event.stopPropagation()">
+        <button class="modal-cerrar" (click)="cerrarModal()">✕</button>
+        <div class="modal-body">
+            <ng-container *ngTemplateOutlet="templateActivo"></ng-container>
+        </div>
+    </div>
+</div>
+
+<ng-template #modal1>
+    <img src="imgTecnologias/angular.png" alt="Angular">
+    <h3>Angular</h3>
+
+    <p><strong>Definición</strong></p>
+    <p>Framework de desarrollo web front-end basado en TypeScript, creado y mantenido por Google. Permite construir
+        aplicaciones web de una sola página (SPA) con una arquitectura basada en componentes.</p>
+
+    <p><strong>Importancia de su uso</strong></p>
+    <p>Es uno de los frameworks más utilizados a nivel empresarial por su robustez, escalabilidad y el ecosistema
+        completo que ofrece, permitiendo desarrollar aplicaciones complejas de manera organizada y mantenible.</p>
+
+    <p><strong>Ventajas</strong></p>
+
+    <li>Arquitectura basada en componentes reutilizables</li>
+    <li>Two-way data binding que sincroniza vista y modelo automáticamente</li>
+    <li>Inyección de dependencias integrada</li>
+    <li>CLI potente que agiliza el desarrollo</li>
+    <li>Soporte nativo para TypeScript con tipado fuerte</li>
+
+</ng-template>
+
+<ng-template #modal2>
+    <img src="imgTecnologias/sql.png" alt="SQL Server">
+    <h3>SQL Server</h3>
+
+    <p><strong>Definición</strong></p>
+    <p>Sistema de gestión de bases de datos relacional desarrollado por Microsoft. Permite almacenar, organizar y
+        consultar grandes volúmenes de datos de forma estructurada mediante el lenguaje SQL.</p>
+
+    <p><strong>Importancia de su uso</strong></p>
+    <p>Es ampliamente utilizado en entornos empresariales por su alta confiabilidad, seguridad y capacidad de
+        integración con otras tecnologías Microsoft, siendo clave en aplicaciones que requieren manejo intensivo de
+        datos.</p>
+
+    <p><strong>Ventajas</strong></p>
+
+    <li>Alto rendimiento en consultas complejas y grandes volúmenes de datos
+    <li>Seguridad avanzada con cifrado y control de acceso por roles
+    <li>Integración nativa con el ecosistema Microsoft (.NET, Azure)
+    <li>Herramientas visuales potentes como SQL Server Management Studio
+    <li>Soporte para procedimientos almacenados y transacciones ACID
+
+</ng-template>
+
+<ng-template #modal3>
+    <img src="imgTecnologias/laravel.png" alt="Laravel">
+    <h3>Laravel</h3>
+
+    <p><strong>Definición</strong></p>
+    <p>Framework de desarrollo web back-end basado en PHP, reconocido por su sintaxis elegante y expresiva. Sigue el
+        patrón de arquitectura MVC (Modelo-Vista-Controlador) y ofrece un ecosistema completo para construir
+        aplicaciones web modernas.</p>
+
+    <p><strong>Importancia de su uso</strong></p>
+    <p>Es el framework PHP más popular del mundo gracias a su curva de aprendizaje accesible y su capacidad para
+        desarrollar desde APIs REST hasta aplicaciones web completas de forma rápida y estructurada.</p>
+
+    <p><strong>Ventajas</strong></p>
+
+    <li>ORM Eloquent que simplifica la interacción con bases de datos</li>
+    <li>Sistema de rutas claro e intuitivo</li>
+    <li>Autenticación y autorización integradas</li>
+    <li>Migraciones de base de datos para control de versiones del esquema</li>
+    <li>Gran ecosistema de paquetes a través de Composer</li>
+
+</ng-template>
+
+<ng-template #modal4>
+    <img src="imgTecnologias/git.png" alt="GitHub">
+    <h3>GitHub</h3>
+
+    <p><strong>Definición</strong></p>
+    <p>Plataforma de alojamiento y colaboración de código fuente basada en Git. Permite gestionar repositorios,
+        controlar versiones y trabajar en equipo sobre proyectos de software de manera organizada y distribuida.</p>
+
+    <p><strong>Importancia de su uso</strong></p>
+    <p>Es la plataforma de desarrollo colaborativo más utilizada en el mundo, siendo indispensable tanto en equipos
+        pequeños como en grandes organizaciones para mantener el historial de cambios y coordinar el trabajo entre
+        desarrolladores.</p>
+
+    <p><strong>Ventajas</strong></p>
+
+    <li>Control de versiones completo con historial de todos los cambios</li>
+    <li>Trabajo colaborativo mediante ramas, pull requests y revisiones de código</li>
+    <li>Integración con pipelines de CI/CD para despliegue automatizado</li>
+    <li>Issues y proyectos para gestión de tareas dentro del repositorio</li>
+    <li>Comunidad masiva y acceso a millones de proyectos open source</li>
+
+</ng-template>
